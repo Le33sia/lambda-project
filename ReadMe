@@ -1,0 +1,15 @@
+Compliance Report Lambda Function
+
+Overview
+
+This AWS Lambda function generates a compliance report by collecting information about AWS environment, specifically on S3 bucket policies and IAM roles.
+
+
+What it Does
+
+Lists all S3 buckets in the AWS account.
+Retrieves the bucket policy for each S3 bucket.
+Lists all IAM roles in the AWS account.
+Compiles this information into a JSON report.
+Saves the report as a JSON file in a specified S3 bucket.
+The report filename includes a timestamp to ensure uniqueness.
